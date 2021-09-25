@@ -1,5 +1,14 @@
+
 .App {
   text-align: center;
+  background-color: rgb(229, 234, 238);
+}
+::selection{
+  color: white;
+  background-color: rgb(178, 170, 252);
+}
+.logo{
+  padding: 1%;
 }
 
 .App-logo {
