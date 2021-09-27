@@ -1,0 +1,49 @@
+/*.navbox {
+    top: 0;
+    display: block;
+    position: sticky;
+    background-color: skyblue;
+  }
+  .navbar {
+      position: relative;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 3px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    transition: height 1s;
+  }
+  .navopen {
+      overflow: auto;
+      height: auto;
+      width: auto;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 5px 3px 1px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      transition: all 1s;
+  }
+  
+  .active {
+    background-color: white;
+  }
+  
+  .link {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    border-right: 1px solid skyblue;
+  }
+  .link:hover {
+    background-color: white;
+  }
+  .menu{
+      top: 0;
+      right: 0;
+      position: absolute;
+      cursor: pointer;
+  }
+.logo{
+      float: left;
+  } */

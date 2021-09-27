@@ -1,0 +1,34 @@
+.footer{
+    background-color: rgb(73, 72, 72);
+    text-align: left;
+    color: white;
+}
+.copyright{
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+.link-down{
+    text-decoration:none;
+    color:white;
+    display:block;
+    cursor:pointer;
+    background-color:rgb(73, 72, 72);
+}
+/* @media screen and (min-width:1000px) {
+    .grid-2{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      text-align: left;
+      background-color: red;
+    }
+    
+  }
+  @media screen and (min-width:100px) {
+    .grid-2{
+      display: block;
+      text-align: center;
+    }
+    
+  } */
+  

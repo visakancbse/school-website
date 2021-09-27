@@ -1,11 +1,10 @@
 
 .App {
-  text-align: center;
   background-color: rgb(229, 234, 238);
 }
 ::selection{
   color: white;
-  background-color: rgb(178, 170, 252);
+  background-color: rgb(57, 37, 240);
 }
 .logo{
   padding: 1%;
@@ -43,5 +42,26 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (min-width:1000px) {
+  .grid-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    background-color: red;
+  }
+  .grid-2 div{
+    margin: auto;
+  }
+}
+@media screen and (min-width:100px) {
+  .grid-2{
+    display: block;
+    text-align: center;
+  }
+  
+  .grid-2 div{
+    padding: 1%;
   }
 }

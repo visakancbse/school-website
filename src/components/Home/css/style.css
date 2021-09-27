@@ -1,0 +1,70 @@
+
+@media screen and (min-width:100px) {
+    .card-image{
+        width: 400px;
+        height: 400px;
+    }
+    .card{
+        display: block;
+        margin: auto;
+        background-color: white;
+        width: 400px;
+        border-bottom: 5px solid violet;
+        border-radius: 5px;
+        padding-bottom: 1%;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    .grid{
+        text-align: center;
+        animation: land 1s ease-in;
+        transform: translateY(-3%);
+    }
+    
+@keyframes land {
+    0%{
+        transform: translateY(1%);
+    }
+    50%{
+        transform: translateY(-3%);
+    }
+}
+}
+@media screen and (min-width:1100px) {
+    
+
+.card-image {
+    width: 250px;
+    height: 200px;
+}
+.card{
+    background-color: white;
+    width: 250px;
+    border-bottom: 5px solid violet;
+    border-radius: 5px;
+    padding-bottom: 1%;
+    overflow: hidden;
+    transform: none;
+    margin-top: 0px;
+}
+.grid{
+    text-align: center;
+    animation: land 1s ease-in;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-20%);
+}
+@keyframes land {
+    0%{
+        transform: translateY(10%);
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+}
+}
+
+.card:hover{
+    transform: translateY(-5%);
+    box-shadow: 2px 4px 10px 4px rgba(0,0,0,0.2);
+}
