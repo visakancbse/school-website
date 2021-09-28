@@ -102,7 +102,7 @@ function NavBar() {
               onClick={closeNavBar}
               to="/careers"
             >
-              Carreers
+              Careers
             </NavLink>
             {/* </div>
       <div className="nav"> */}

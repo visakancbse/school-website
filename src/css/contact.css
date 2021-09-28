@@ -1,0 +1,40 @@
+.header {
+  background-image: linear-gradient(to right, #1abc9c, white);
+  padding: 1%;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 25px 0px 0px 25px;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 100px) {
+  .grid-map {
+    display: block;
+    padding: 2%;
+    text-align: center;
+    animation: zoom 1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.background{
+      background-image: url("https://districts.ecourts.gov.in/sites/default/files/u234/mdu_taluks_10.gif");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 700px 400px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid-map {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: unset;
+  }
+  .float-r {
+    margin: auto;
+  }
+}

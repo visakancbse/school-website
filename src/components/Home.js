@@ -1,18 +1,35 @@
 import React, { useEffect, useState } from "react";
-import Bg1 from "../images/slider-bg1.jpg";
-import logo from "../images/logo.png";
+import Bg1 from "../images/correspondent.JPG";
+import Bg2 from "../images/slider-bg2.JPG";
+import Bg3 from "../images/slider-bg3.JPG";
+import Bg4 from "../images/slider-bg4.JPG";
 import "../css/home.css";
 import { Button } from "@mui/material";
 import Standards from "./Home/Standards";
+import UpcomingEvents from "./Home/UpcomingEvents";
+import Testimonials from "./Home/Testimonials";
+import About from "../images/about.jpg";
+import School from "../images/school.jpg";
+import Features from "./Home/Features";
+import { useHistory } from "react-router";
 function Home() {
-  const images = [Bg1, Bg1];
+  const history = useHistory();
+  const images = [Bg1, Bg2,Bg3,Bg4];
   const [index, setIndex] = useState(0);
-  const [display, setDisplay] = useState(images?.map((a) => false));
+  const [display, setDisplay] = useState(images?.map((a, i) => i === 0));
+
+  const testimonials = [
+    {
+      statement: "statement",
+      name: "Mr.Name",
+      who: "His father",
+    },
+  ];
 
   useEffect(() => {
     const slideImage = () => {
       setIndex((i) => {
-        // console.log("called" + i);
+        console.log("called" + i);
         setDisplay((d) => {
           return d.map((a, ai) => ai === i);
         });
@@ -38,11 +55,17 @@ function Home() {
               <img key={i} className="image" src={image} alt="slider" />;
               <div className="overlay">
                 <div className="overlay-content">
-                  <h1>Heading 1</h1>
-                  <p>paragraph 1</p>
-                  <p>paragraph 2</p>
-                  <p>paragraph 3</p>
-                  <Button variant="contained" color="primary">
+                  <h1>Space To learn ! Space to Grow!..</h1>
+                  <p>Visakan School is </p>
+                  <p>
+                    "The School with different to give the Overall Development
+                    for your child"
+                  </p>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => history.push("/application-form")}
+                  >
                     Apply now
                   </Button>
                 </div>
@@ -53,8 +76,8 @@ function Home() {
       </div>
       <Standards />
       <div className="grid-2">
-        <div>
-          <img className="school-img" src={logo} alt="school" />
+        <div className="img">
+          <img src={About} alt="school" />
         </div>
         <div>
           <h1>About us</h1>
@@ -76,11 +99,22 @@ function Home() {
               physical education facilities.
             </p>
           </p>
+          <div style={{ paddingBottom: "2%" }}>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => history.push("/about")}
+            >
+              Learn more
+            </Button>
+          </div>
         </div>
       </div>
+      <Features />
+      <UpcomingEvents />
       <div className="grid-2 red-grad">
-        <div>
-          <img className="school-img" src={logo} alt="school" />
+        <div className="img">
+          <img src={School} alt="school" />
         </div>
         <div>
           <h1>Apply for admission</h1>
@@ -90,9 +124,22 @@ function Home() {
             for admissions by filling the online form. The offline admission
             forms can be collected from the Admin Office also.
           </p>
-          <Button color="inherit" variant="outlined" className="jump">Apply now</Button>
+          <Button
+            color="inherit"
+            variant="outlined"
+            onClick={() => history.push("/application-form")}
+            className="jump"
+          >
+            Apply now
+          </Button>
         </div>
       </div>
+      <div style={{ padding: "1%" }}>
+        {testimonials.map((t) => (
+          <Testimonials key={t.name} testimonial={t} />
+        ))}
+      </div>
+      <div></div>
     </div>
   );
 }

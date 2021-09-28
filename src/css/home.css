@@ -10,8 +10,9 @@
 }
 .image{
   
-  animation:zoomin 20s ease-in infinite;
-  width: 100%;
+  animation:zoomin 10s ease-in infinite;
+  width: 80%;
+  float: right;
   height: 500px;
 }
 @keyframes fade {
@@ -74,7 +75,7 @@
       background-color: white;
     }
     
-    .grid-2 .content{
+    .grid-2 .img{
       padding: 1%;
     }
     .red-grad{
@@ -89,7 +90,7 @@
       text-align: left;
       background-color: white;
     }
-    .grid-2 .content{
+    .grid-2 .img{
       margin: auto;
     }
     .red-grad{

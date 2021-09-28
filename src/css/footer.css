@@ -1,19 +1,36 @@
-.footer{
-    background-color: rgb(73, 72, 72);
-    text-align: left;
-    color: white;
+@media screen and (min-width:100px) {
+  
+  .footer{
+      background-color: rgb(73, 72, 72);
+      text-align: center;
+      color: white;
+  }
+}
+@media screen and (min-width:1000px) {
+  
+  .footer{
+      text-align: left;
+  }
 }
 .copyright{
     text-align: center;
     background-color: rgb(34, 34, 34);
     color: white;
+    bottom: 0;
+    padding: 1%;
 }
 .link-down{
+  padding: 1%;
     text-decoration:none;
     color:white;
     display:block;
     cursor:pointer;
     background-color:rgb(73, 72, 72);
+}
+.a-down{
+    text-decoration:none;
+    color:white;
+    cursor:pointer;
 }
 /* @media screen and (min-width:1000px) {
     .grid-2{
