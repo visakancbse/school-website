@@ -1,7 +1,10 @@
 import { ErrorOutline } from "@mui/icons-material";
-import React from "react";
+import React, { useEffect } from "react";
 
 function NotFoundPage() {
+  useEffect(()=>{
+    window.document.documentElement.scrollTop="0"
+},[])
   return (
     <div style={{textAlign:'center',padding:"2%"}}>
       <div>

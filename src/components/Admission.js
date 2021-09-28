@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Typography } from "@mui/material";
 import AdmissionImg from "../images/Visakan-admission.jpg";
 import "../css/style.css";
 import { useHistory } from "react-router";
 function Admission() {
-  const history=useHistory()
+  useEffect(() => {
+    window.document.documentElement.scrollTop = "0";
+  }, []);
+  const history = useHistory();
   return (
     <div>
-      <Typography variant="h2" className="header">
-        Admission
-      </Typography>
+      <div style={{ overflow: "hidden" }}>
+        <Typography variant="h2" className="header">
+          Admission
+        </Typography>
+      </div>
       <div className="grid-content">
         <div>
           <img width="500" height="500" src={AdmissionImg} alt="admission" />

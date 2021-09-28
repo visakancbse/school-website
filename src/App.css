@@ -1,10 +1,13 @@
-
+*{
+  /* font-family: 'Times New Roman', Times, serif; */
+}
 .App {
   background-color: rgb(229, 234, 238);
 }
 ::selection{
   color: white;
-  background-color: rgb(57, 37, 240);
+  /* background-color: rgb(57, 37, 240); */
+  background-color: black;
 }
 .logo{
   padding: 1%;

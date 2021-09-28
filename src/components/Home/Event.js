@@ -18,7 +18,7 @@ function Event({ event, ...props }) {
         >
           {event.name}
         </span>
-        <p style={{ fontSize: "x-small" }}>
+        <p style={{ fontSize: "x-small",fontStyle:'italic' }}>
           <Schedule style={{ fontSize: "x-small" }} />
           {event.time} <LocationOn style={{ fontSize: "x-small" }} />
           {event.place}

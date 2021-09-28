@@ -40,7 +40,7 @@
 .card{
     background-color: white;
     width: 250px;
-    border-bottom: 5px solid violet;
+    border-bottom: 5px solid #f44336;
     border-radius: 5px;
     padding-bottom: 1%;
     overflow: hidden;

@@ -4,6 +4,7 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
+  Typography,
 } from "@mui/material";
 import React from "react";
 
@@ -30,12 +31,17 @@ function Features() {
   return (
     <div>
       <div style={{ textAlign: "center" }}>
-        <h2>The Special Features of Visakan School are</h2>
-        <div className="grid-2">
+        <Typography
+          variant="h3"
+          style={{ fontFamily: "Times new roman", padding: "1%" }}
+        >
+          The Special Features of Visakan School
+        </Typography>
+        <div style={{ fontStyle: "italic" }} className="grid-2">
           <div>
-            {features1.map((f) => {
+            {features1.map((f, i) => {
               return (
-                <List>
+                <List key={i}>
                   <ListItem>
                     <ListItemAvatar>
                       <PlayArrow />
@@ -47,9 +53,9 @@ function Features() {
             })}
           </div>
           <div>
-            {features2.map((f) => {
+            {features2.map((f, i) => {
               return (
-                <List>
+                <List key={i}>
                   <ListItem>
                     <ListItemAvatar>
                       <PlayArrow />

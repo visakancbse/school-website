@@ -17,23 +17,26 @@ import { Fab } from "@mui/material";
 import { Navigation } from "@mui/icons-material";
 import ApplicationForm from "./components/ApplicationForm";
 import NotFoundPage from "./components/NotFoundPage";
+import LiveEvent from "./components/LiveEvent";
 // import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 function App() {
   const mybutton = useRef(null);
   useEffect(() => {
+    let element = mybutton?.current;
     window.addEventListener("scroll", () => {
       if (
         window.document.body.scrollTop > 20 ||
         window.document.documentElement.scrollTop > 20
       ) {
-        mybutton.current.style.display = "block";
+        if (mybutton !== null) element.style.display = "block";
       } else {
-        mybutton.current.style.display = "none";
+        if (mybutton !== null) element.style.display = "none";
       }
     });
   }, []);
   return (
     <Router>
+      <LiveEvent />
       <div className="App">
         <NavBar />
         <div className="logo">
@@ -65,12 +68,13 @@ function App() {
       <Footer />
       <Fab
         variant="circular"
-        color="secondary"
         style={{
           bottom: "1px",
           right: "1px",
           position: "fixed",
           zIndex: "100",
+          backgroundColor: "#f44336",
+          color:'white',
           display:
             window.document.documentElement.scrollTop > 20 ? "block" : "none",
         }}

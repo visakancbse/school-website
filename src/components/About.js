@@ -4,23 +4,20 @@ import "../css/style.css";
 import School from "../images/school.jpg";
 import AboutImg from "../images/visakan-school-about-image.jpg";
 function About() {
-
-    useEffect(()=>{
-        window.document.documentElement.scrollTop="0"
-    },[])
+  useEffect(() => {
+    window.document.documentElement.scrollTop = "0";
+  }, []);
 
   return (
     <div>
-      <Typography variant="h2" className="header">
-        About Us
-      </Typography>
+      <div style={{ overflow: "hidden" }}>
+        <Typography variant="h2" className="header">
+          About Us
+        </Typography>
+      </div>
       <div className="grid-content">
-        <div style={{textAlign:'center'}}>
-          <img
-            style={{ margin: "auto" }}
-            src={School}
-            alt="school"
-          />
+        <div style={{ textAlign: "center" }}>
+          <img style={{ margin: "auto" }} src={School} alt="school" />
         </div>
         <div>
           <p>
@@ -60,12 +57,8 @@ function About() {
             contributing members of the global community.
           </p>
         </div>
-        <div style={{textAlign:'center'}}>
-          <img
-            style={{ margin: "auto" }}
-            src={AboutImg}
-            alt="school"
-          />
+        <div style={{ textAlign: "center" }}>
+          <img style={{ margin: "auto" }} src={AboutImg} alt="school" />
         </div>
       </div>
     </div>

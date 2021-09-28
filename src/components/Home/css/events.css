@@ -1,10 +1,14 @@
 
+.event-box{
+    padding: 1%;
+}
 .event-list{
     margin: auto;
     width: 400px;
     background-color: white;
     text-align: center;
     border-radius: 5px;
+    padding:1%;
 }
 .event-date{
     text-align: center;
@@ -14,16 +18,20 @@
     font-weight: bolder;
     font-size: xx-large;
     display: block;
+    font-style: italic;
 }
 .event-date .h2{
     display: block;
     font-weight: bolder;
     font-size: x-large;
     border-bottom: 5px solid yellowgreen;
+    border-radius: 10px;
+    font-style: italic;
 }
 .event-name{
     width: 100%;
     margin: auto;
+    padding:0% 5%;
 }
 .grid-2s{
     display: grid;

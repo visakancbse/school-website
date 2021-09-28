@@ -1,14 +1,26 @@
 import { Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/style.css";
+import Sports from "../images/sports.jpg";
 import Candle from "../images/candle.jpg";
+// import Extra from "../images/extra.jpg";
+import Lab from "../images/lab.JPG";
+import AudioVisual from "../images/auditorium.JPG";
+import Auditorium from "../images/auditorium.JPG";
+import Library from "../images/library.JPG";
+import Social from "../images/social.jpg";
 
 function Infrastructure() {
+  useEffect(() => {
+    window.document.documentElement.scrollTop = "0";
+  }, []);
   return (
     <div>
-      <Typography variant="h2" className="header">
-        Infrastructure
-      </Typography>
+      <div style={{ overflow: "hidden" }}>
+        <Typography variant="h2" className="header">
+          Infrastructure
+        </Typography>
+      </div>
       <div className="grid-content">
         <div>
           <h2 className="content">At Visakan School</h2>
@@ -33,7 +45,7 @@ function Infrastructure() {
       </div>
       <div className="grid-content">
         <div>
-          <img className="float-r" src={Candle} alt="Loading..." />
+          <img className="float-r" src={Sports} alt="Loading..." />
         </div>
         <div>
           <h2 className="content">Sports and Co-Curricular activities:</h2>
@@ -81,12 +93,18 @@ function Infrastructure() {
           </p>
         </div>
         <div>
-          <img className="float-r" src={Candle} alt="Loading..." />
+          <img className="float-r" src={Social} alt="Loading..." />
         </div>
       </div>
       <div className="grid-content">
         <div>
-          <img className="float-r" src={Candle} alt="Loading..." />
+          <img
+            className="float-r"
+            height="250"
+            width="400"
+            src={Library}
+            alt="Loading..."
+          />
         </div>
         <div>
           <h2>Library:</h2>
@@ -114,12 +132,24 @@ function Infrastructure() {
           </p>
         </div>
         <div>
-          <img className="float-r" src={Candle} alt="Loading..." />
+          <img
+            className="float-r"
+            height="250"
+            width="400"
+            src={Lab}
+            alt="Loading..."
+          />
         </div>
       </div>
       <div className="grid-content">
         <div>
-          <img className="float-r" src={Candle} alt="Loading..." />
+          <img
+            className="float-r"
+            height="250"
+            width="400"
+            src={Auditorium}
+            alt="Loading..."
+          />
         </div>
         <div>
           <h2>Auditorium:</h2>
@@ -142,10 +172,16 @@ function Infrastructure() {
           </p>
         </div>
         <div>
-          <img className="float-r" src={Candle} alt="Loading..." />
+          <img
+            className="float-r"
+            height="250"
+            width="400"
+            src={AudioVisual}
+            alt="Loading..."
+          />
         </div>
       </div>
-      <div style={{ textAlign: "center",padding:"1%" }}>
+      <div style={{ textAlign: "center", padding: "1%" }}>
         <iframe
           width="560"
           height="315"
