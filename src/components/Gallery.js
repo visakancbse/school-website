@@ -9,7 +9,7 @@ function Gallery() {
   return (
     <div>
       <div style={{ overflow: "hidden" }}>
-        <Typography variant="h2" className="header">
+        <Typography style={{fontFamily: 'Times New Roman'}} variant="h2" className="header">
           Gallery
         </Typography>
       </div>

@@ -2,30 +2,22 @@ import React, { useEffect, useRef } from "react";
 import "../css/navbar.css";
 import { NavLink } from "react-router-dom";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import { ChevronLeftRounded } from "@mui/icons-material";
+import { ChevronLeftRounded, KeyboardArrowDown } from "@mui/icons-material";
 
 import logo from "../images/logo.png";
 
 function NavBar() {
   const navRef = useRef(null);
   const closeNavBar = () => {
-    // navRef.current.style.width = "0px";
-    // navRef.current.style.overflow = "hidden";
-
     navRef.current.className = "navbox";
-    // navRef.current.classList.remove("navopen");
   };
-  useEffect(() => {
-    //   window.addEventListener("scroll",closeNavBar);
-  }, []);
+  useEffect(() => {}, []);
   return (
     <>
-      {/* <img src={logo} alt="logo"/> */}
       <div
         className="menu"
         onClick={() => {
           navRef.current.className = "navopen";
-          // navRef.current.classList.remove("navclose");
         }}
       >
         <MenuRoundedIcon />
@@ -40,7 +32,6 @@ function NavBar() {
           <div className="top-logo">
             <img width="300" height="70" src={logo} alt="Logo" />
           </div>
-          {/* <div className="nav"> */}
           <div className="navlinks">
             <NavLink
               className="link"
@@ -51,8 +42,6 @@ function NavBar() {
             >
               Home
             </NavLink>
-            {/* </div>
-      <div className="nav"> */}
             <NavLink
               className="link"
               activeClassName="active"
@@ -61,14 +50,47 @@ function NavBar() {
             >
               Infrastructure
             </NavLink>
-            <NavLink
-              className="link"
-              activeClassName="active"
-              onClick={closeNavBar}
-              to="/education"
-            >
-              Education
-            </NavLink>
+            <div className="link dropdown">
+              
+                Education
+                <KeyboardArrowDown style={{display:'inline-flex',verticalAlign:'middle',height:'20px'}} />
+
+              <div className="dropdown-box drop-open">
+                <NavLink
+                  className="dropdown-item link"
+                  activeClassName="active"
+                  onClick={closeNavBar}
+                  to="/kindergarten"
+                >
+                  Kindergarten
+                </NavLink>
+                <NavLink
+                  className="dropdown-item link"
+                  activeClassName="active"
+                  onClick={closeNavBar}
+                  to="/primary"
+                >
+                  Primary
+                </NavLink>
+                <NavLink
+                  className="dropdown-item link"
+                  activeClassName="active"
+                  onClick={closeNavBar}
+                  to="/secondary"
+                >
+                  Secondary
+                </NavLink>
+                <NavLink
+                  className="dropdown-item link"
+                  activeClassName="active"
+                  onClick={closeNavBar}
+                  to="/seniorsecondary"
+                >
+                  Senior Secondary
+                </NavLink>
+              </div>
+            </div>
+
             <NavLink
               className="link"
               activeClassName="active"
@@ -77,8 +99,6 @@ function NavBar() {
             >
               Gallery
             </NavLink>
-            {/* </div>
-      <div className="nav"> */}
             <NavLink
               className="link"
               activeClassName="active"
@@ -87,15 +107,6 @@ function NavBar() {
             >
               Admission
             </NavLink>
-            {/* </div>
-      <div className="nav"> */}
-            {/* <NavLink className="link" activeClassName="active" onClick={closeNavBar} to="/application">
-            Application
-          </NavLink> */}
-            {/* </div>
-      <div className="nav"> */}
-            {/* </div>
-      <div className="nav"> */}
             <NavLink
               className="link"
               activeClassName="active"
@@ -104,20 +115,6 @@ function NavBar() {
             >
               Careers
             </NavLink>
-            {/* </div>
-      <div className="nav"> */}
-            {/* <NavLink className="link" activeClassName="active" onClick={closeNavBar} to="/features">
-            Features
-          </NavLink> */}
-            {/* </div>
-      <div className="nav"> */}
-            {/* </div>
-      <div className="nav"> */}
-            {/* <NavLink className="link" activeClassName="active" onClick={closeNavBar} to="/about">
-            About
-          </NavLink> */}
-            {/* </div>
-      <div className="nav"> */}
             <NavLink
               className="link"
               activeClassName="active"
@@ -126,7 +123,6 @@ function NavBar() {
             >
               Contact
             </NavLink>
-            {/* </div> */}
           </div>
         </div>
       </div>

@@ -7,10 +7,10 @@ import CardContent from "./CardContent";
 
 function Standards() {
   const content = [
-      { title: "Kindergarten", desc: "", image: Kindergarten },
-      { title: "Primary", desc: "", image: Primary },
-      { title: "Secondary", desc: "", image: Secondary},
-      { title: "Senior Secondary", desc: "", image: SeniorSecondary },
+      { title: "Kindergarten", desc: "", image: Kindergarten,link:'/kindergarten' },
+      { title: "Primary", desc: "", image: Primary,link:'/primary' },
+      { title: "Secondary", desc: "", image: Secondary,link:'/secondary'},
+      { title: "Senior Secondary", desc: "", image: SeniorSecondary,link:'/seniorsecondary' },
     ];
   return <div className="grid">
       {content.map(element=><CardContent key={element.title} content={element}/>)}

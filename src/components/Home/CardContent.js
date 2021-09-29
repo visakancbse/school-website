@@ -12,7 +12,7 @@ function CardContent({ content, ...props }) {
       <Button
       style={{backgroundColor:'#f44336'}}
         variant="contained"
-        onClick={() => history.push(`/${content?.title?.toLowerCase()}`)}
+        onClick={() => history.push(content?.link)}
       >
         Learn more
       </Button>

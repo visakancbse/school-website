@@ -4,6 +4,7 @@ import Logo from "../images/logo.png";
 import {
   CopyrightRounded,
   FacebookRounded,
+  Favorite,
   Instagram,
   Twitter,
   YouTube,
@@ -15,7 +16,7 @@ function Footer() {
   return (
     <div>
       <div className="footer grid-2">
-        <div style={{textAlign:"center",padding:'1%'}}>
+        <div style={{ textAlign: "center", padding: "1%" }}>
           <img src={Logo} alt="Logo" />
           <p>
             At Visakan, we believe that each kid has their own and unique bunch
@@ -74,12 +75,22 @@ function Footer() {
               </NavLink>
             </div>
           </div>
-          <ContactInfo/>
+          <ContactInfo />
         </div>
       </div>
       <div className="copyright">
-        <CopyrightRounded />
-        Copyright 2021 Visakan school - madurai. Made by{" "}
+        <CopyrightRounded
+          style={{ fontSize:'20px' }}
+        />
+        {" "}Copyright 2021 Visakan school - madurai. Made with{" "}
+        <Favorite
+          style={{
+            display: "inline-flex",
+            verticalAlign: "middle",
+            color: "red",
+          }}
+        />{" "}
+        by{" "}
         <a
           className="a-down"
           href="https://www.linkedin.com/in/prakash-devendran"

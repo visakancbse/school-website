@@ -2,11 +2,9 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
-// import DropBar from "./components/DropBar";
 import Footer from "./components/Footer";
 import logo from "./images/logo.png";
 import Infrastructure from "./components/Infrastructure";
-import Education from "./components/Education";
 import Gallery from "./components/Gallery";
 import Careers from "./components/Careers";
 import Contact from "./components/Contact";
@@ -18,7 +16,11 @@ import { Navigation } from "@mui/icons-material";
 import ApplicationForm from "./components/ApplicationForm";
 import NotFoundPage from "./components/NotFoundPage";
 import LiveEvent from "./components/LiveEvent";
-// import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import Kindergarten from './components/Education/Kindergarten'
+import Primary from './components/Education/Primary'
+import Secondary from './components/Education/Secondary'
+import SeniorSecondary from './components/Education/SeniorSecondary'
+
 function App() {
   const mybutton = useRef(null);
   useEffect(() => {
@@ -51,7 +53,11 @@ function App() {
             path="/infrastructure"
             component={Infrastructure}
           ></Route>
-          <Route exact path="/education" component={Education}></Route>
+          {/* <Route exact path="/education" component={Education}></Route> */}
+          <Route exact path="/kindergarten" component={Kindergarten}></Route>
+          <Route exact path="/primary" component={Primary}></Route>
+          <Route exact path="/secondary" component={Secondary}></Route>
+          <Route exact path="/seniorsecondary" component={SeniorSecondary}></Route>
           <Route exact path="/gallery" component={Gallery}></Route>
           <Route exact path="/admission" component={Admission}></Route>
           <Route exact path="/careers" component={Careers}></Route>

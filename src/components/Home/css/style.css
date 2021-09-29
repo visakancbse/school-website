@@ -2,7 +2,7 @@
 @media screen and (min-width:100px) {
     .card-image{
         width: 400px;
-        height: 400px;
+        height: 300px;
     }
     .card{
         display: block;
@@ -17,7 +17,7 @@
     }
     .grid{
         text-align: center;
-        animation: land 1s ease-in;
+        animation: land 1s ease-in-out;
         transform: translateY(-3%);
     }
     
@@ -25,7 +25,7 @@
     0%{
         transform: translateY(1%);
     }
-    50%{
+    100%{
         transform: translateY(-3%);
     }
 }
@@ -49,7 +49,8 @@
 }
 .grid{
     text-align: center;
-    animation: land 1s ease-in;
+    animation: land 1s ease-in-out;
+    /* animation-delay: 0.9s; */
     display: flex;
     justify-content: space-around;
     transform: translateY(-20%);
@@ -58,7 +59,7 @@
     0%{
         transform: translateY(10%);
     }
-    50%{
+    100%{
         transform: translateY(-20%);
     }
 }

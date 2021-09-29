@@ -17,7 +17,7 @@ function Infrastructure() {
   return (
     <div>
       <div style={{ overflow: "hidden" }}>
-        <Typography variant="h2" className="header">
+        <Typography style={{fontFamily:'Times new roman'}} variant="h2" className="header">
           Infrastructure
         </Typography>
       </div>

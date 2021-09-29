@@ -20,8 +20,8 @@ function Home() {
 
   const testimonials = [
     {
-      statement: "statement",
-      name: "Mr.Name",
+      statement: "Visakan school has ample space for education as well as other children's activities. The school also places focus on other extra-curricular activities unlike other schools which only claim to have them. It makes me happy to see a smiles on the faces of my children when I pick them up at school. I'm really glad that I chose Visakan for my kids.",
+      name: "S.Sathya Prabha",
       who: "His father",
     },
   ];
@@ -48,6 +48,7 @@ function Home() {
 
   return (
     <div>
+      <span data={index}></span>
       <div className="container">
         {images?.map((image, i) => {
           return (
@@ -129,9 +130,9 @@ function Home() {
           <img src={School} alt="school" />
         </div>
         <div>
-          <h1>Apply for admission</h1>
-          <h3>Admissions open for Academic Year 2021 - 2022</h3>
-          <p>
+          <h1  style={{ opacity: "0.8" ,textTransform:'uppercase'}}>Apply for admission</h1>
+          <h3 style={{ opacity: "0.75" ,fontStyle:'italic'}}>Admissions open for Academic Year 2021 - 2022</h3>
+          <p style={{ opacity: "0.75" ,fontStyle:'italic'}}>
             We invite you to join our vision for your child’s future and en-roll
             for admissions by filling the online form. The offline admission
             forms can be collected from the Admin Office also.

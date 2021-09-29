@@ -1,132 +1,175 @@
-@media only screen and (min-width:100px) {
-    .logo{
-        text-align: center;
-        box-shadow: 1px 3px 2px 2px rgba(0, 0, 59, 0.3);
-    }
-    .top-logo{
-        display: none;
-    }
-    
-    .navlinks{
-        float:none;
-        margin: auto;
-    }
-    .menu{
-        left: 0;
-        top: 0;
-        position: absolute;
-        display:inline;
-        cursor: pointer;
-        /* color: white;
+@media only screen and (min-width: 100px) {
+  .logo {
+    text-align: center;
+    box-shadow: 1px 3px 2px 2px rgba(0, 0, 59, 0.3);
+  }
+  .top-logo {
+    display: none;
+  }
+  .dropdown-item{
+      text-align: center;
+  }
+  .dropdown{
+      cursor: pointer;
+  }
+
+  .navlinks {
+    float: none;
+    margin: auto;
+  }
+  .menu {
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+    /* color: white;
         background-color: rgb(0, 0, 59); */
-        padding: 1% 2%;
-        font-size: xx-large;
-        transform: translate(50%,50%);
-    }
-    .menu:hover{
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 50%;
-    }
+    padding: 1% 2%;
+    font-size: xx-large;
+    transform: translate(50%, 50%);
+  }
+  .menu:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
 
-    .close{
-        display: inline;
-        float: right;
-        cursor: pointer;
-        margin-right: 1%;
-        color:white;
-    }
-    .close:hover{
-        color: red;
-        background-color: rgba(0,0,0,0.2);
-    }
-    .link{
-        display: block;
-        text-decoration: none;
-        padding:15px 50px;
-        color: white;
-        border-bottom: 1px solid rgb(0, 0, 59);
-        text-transform: uppercase;
-    }
-    
-    .navbar{
-        padding:30px 0px;
-        background-color: rgb(0, 0, 59);
-    }    
-    .navopen{
-        top: 0;
-        text-align: center;
-        background-color: rgb(0, 0, 59);
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-        transition: all 0.5s;
-    }
-    .navbox{
-        top: 0;
-        text-align: center;
-        background-color: rgb(0, 0, 59);
-        position: fixed;
-        z-index: 1;
-        width: 0;
-        height: 100%;
-        overflow: hidden;
-        transition: all 0.5s;
-    }
+  .close {
+    display: inline;
+    float: right;
+    cursor: pointer;
+    margin-right: 1%;
+    color: white;
+  }
+  .close:hover {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .link {
+    display: block;
+    text-decoration: none;
+    padding: 15px 50px;
+    color: white;
+    /* border-bottom: 1px solid rgb(0, 0, 59); */
+    text-transform: uppercase;
+  }
+
+  .navbar {
+    padding: 30px 0px;
+    background-color: rgb(0, 0, 59);
+  }
+  .navopen {
+    top: 0;
+    text-align: center;
+    background-color: rgb(0, 0, 59);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transition: all 0.5s;
+  }
+  .navbox {
+    top: 0;
+    text-align: center;
+    background-color: rgb(0, 0, 59);
+    position: fixed;
+    z-index: 1;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
 }
 
-@media only screen and (min-width:1180px) {
-    .menu{
-        display: none;
-    }
-    .close{
-        display: none;
-    }
-    .navbox,.navopen{
-        width: auto;
-        overflow: visible;
-        display: block;
-        background-color: white;
-        position:sticky;
-    }
-    .navbar{
-        top: 0;
-        position: sticky;
-        /* background-color: rgb(0, 0, 59); */
-        background-color: white;
-        border-top: 1px solid rgba(0,0,0,0.2);
-        box-shadow: 1px 5px 3px 1px rgba(0, 0, 0, 0.5);
-        padding: 20px 10px;
-        text-align: left;
-    }
-    .link{
-        display: inline;
-        text-decoration: none;
-        padding:19px 20px;
-        text-align: center;
-        color: black;
-        border-right: 1px solid white;
-    }
-    .logo{
-        text-align: center;
-        box-shadow: none;
-        display: none;
-    }
-    .top-logo{
-        /* float:left; */
-        padding-left: 1%;
-        display: inline;
-    }
-    .navlinks{
-        float:right;
-        transform: translateY(50%);
-    }
+@media only screen and (min-width: 1180px) {
+  .menu {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  .navbox,
+  .navopen {
+    width: auto;
+    overflow: visible;
+    display: block;
+    background-color: white;
+    position: sticky;
+  }
+  .navbar {
+    top: 0;
+    position: sticky;
+    /* background-color: rgb(0, 0, 59); */
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 3px 1px rgba(0, 0, 0, 0.5);
+    padding: 20px 10px;
+    text-align: left;
+  }
+  .link {
+    display: inline;
+    text-decoration: none;
+    padding: 19px 20px;
+    text-align: center;
+    color: black;
+    border-right: 1px solid white;
+  }
+  .logo {
+    text-align: center;
+    box-shadow: none;
+    display: none;
+  }
+  .top-logo {
+    /* float:left; */
+    padding-left: 1%;
+    display: inline;
+  }
+  .navlinks {
+    float: right;
+    /* transform: translateY(50%); */
+  }
+  .dropdown {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .dropbox {
+    display: inline;
+  }
+  .dropdown-box {
+    left: 0px;
+    margin-top: 20px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    animation: drop 0.2s linear;
+    transform-origin: top center;
+  }
+  .dropdown-item {
+    display: block;
+    padding: 20px;
+    text-align: left;
+  }
+}
+.dropdown:hover .drop-open {
+  display: block;
+}
+@keyframes drop {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
-.link:hover{
-    background-color: rgba(0,0,0,0.5);
+.drop-open {
+  display: none;
 }
-.active{
-    background-color: rgba(0,0,0,0.5);
+.link:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.5);
 }
