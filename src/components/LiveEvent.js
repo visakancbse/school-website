@@ -28,7 +28,7 @@ function LiveEvent() {
       </div>
       <div
         style={{
-          top: "5px",
+          top: "0px",
           right: "1px",
           position: "absolute",
           backgroundColor: "rgba(0,0,0,0.3)",

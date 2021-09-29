@@ -2,7 +2,6 @@ import React from "react";
 import "../css/style.css";
 
 function AlternateGrid({ direction, content, ...props }) {
-
   if (direction) {
     return (
       <div className="grid-content">
@@ -21,7 +20,7 @@ function AlternateGrid({ direction, content, ...props }) {
 }
 
 const Image = ({ content }) => {
-  const { image, dimension,desc } = content;
+  const { image, dimension, desc } = content;
   return (
     <div>
       <img
@@ -35,13 +34,15 @@ const Image = ({ content }) => {
   );
 };
 const Para = ({ content }) => {
-  const { desc,title } = content;
+  const { desc, title } = content;
 
   return (
     <div>
-        {title&&<h1>{title}</h1>}
+      {title && <h1 style={{ textTransform: "uppercase" }}>{title}</h1>}
       {desc?.map((p, i) => (
-        <p key={i}>{p}</p>
+        <p style={{ fontStyle: "italic" }} key={i}>
+          {p}
+        </p>
       ))}
     </div>
   );

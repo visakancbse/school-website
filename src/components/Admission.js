@@ -21,17 +21,17 @@ function Admission() {
         </div>
         <div>
           <h4>Admission Procedure</h4>
-          <p>
+          <p style={{ fontStyle: "italic" }}>
             The prospectus and application form for admission can be obtained on
             payment of Rs 200/- in cash.
           </p>
 
           <h4>Documents to be enclosed:</h4>
-          <p>
+          <p style={{ fontStyle: "italic" }}>
             The following documents must be submitted along with the completed
             application form
           </p>
-          <ul style={{ listStyleType: "number" }}>
+          <ul style={{ listStyleType: "number", fontStyle: "italic" }}>
             <li>
               Recent passport size photograph affixed in the application form.
             </li>
@@ -43,22 +43,22 @@ function Admission() {
             </li>
           </ul>
           <h4>Date of Payment</h4>
-          <ul>
+          <ul style={{ fontStyle: "italic" }}>
             <li>Term I – Before 10th of May</li>
             <li>Term II – Before 30th of September</li>
             <li>Term III- Before 30th of January</li>
           </ul>
         </div>
       </div>
-      <div>
+      <div style={{ padding: "1%" }}>
         <h4>Age Criteria</h4>
-        <p>
+        <p style={{ fontStyle: "italic" }}>
           For admission to VISAKAN SCHOOL – the child is expected to be Two and
           a half years to be enrolled in PreKG. Three and a half years for LKG
           Four and a half years for UKG on Ist May.
         </p>
         <h4>Rules to be followed by the students:</h4>
-        <ul>
+        <ul style={{ fontStyle: "italic" }}>
           <li>Students are expected to be punctual and disciplined.</li>
           <li>
             No student is permitted to leave the school premises during the
@@ -76,15 +76,16 @@ function Admission() {
             school premises.
           </li>
         </ul>
+        <div style={{ textAlign: "center" }}>
+          <Button
+            style={{ backgroundColor: "#f44336", color: "aliceblue" }}
+            onClick={() => history.push("/application-form")}
+            className="jump"
+          >
+            Apply now
+          </Button>
+        </div>
       </div>
-      <Button
-        color="primary"
-        variant="outlined"
-        onClick={() => history.push("/application-form")}
-        className="jump"
-      >
-        Apply now
-      </Button>
     </div>
   );
 }

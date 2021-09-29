@@ -6,11 +6,11 @@
   .top-logo {
     display: none;
   }
-  .dropdown-item{
-      text-align: center;
+  .dropdown-item {
+    text-align: center;
   }
-  .dropdown{
-      cursor: pointer;
+  .dropdown {
+    cursor: pointer;
   }
 
   .navlinks {
@@ -134,6 +134,10 @@
     position: relative;
     display: inline-block;
   }
+  /* .dropdown:active {
+    background-color: #f44336;
+    color: aliceblue;
+  } */
   .dropbox {
     display: inline;
   }
@@ -168,8 +172,10 @@
   display: none;
 }
 .link:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #f44336;
+  color: aliceblue;
 }
 .active {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #f44336;
+  color: aliceblue;
 }

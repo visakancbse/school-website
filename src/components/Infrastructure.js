@@ -17,14 +17,20 @@ function Infrastructure() {
   return (
     <div>
       <div style={{ overflow: "hidden" }}>
-        <Typography style={{fontFamily:'Times new roman'}} variant="h2" className="header">
+        <Typography
+          style={{ fontFamily: "Times new roman" }}
+          variant="h2"
+          className="header"
+        >
           Infrastructure
         </Typography>
       </div>
       <div className="grid-content">
         <div>
-          <h2 className="content">At Visakan School</h2>
-          <p className="content">
+          <h2 className="content" style={{ textTransform: "uppercase" }}>
+            At Visakan School
+          </h2>
+          <p className="content" style={{ fontStyle: "italic" }}>
             {" "}
             Education plays the most important role in acquiring professional
             and social skills and a positive attitude to face the challenges of
@@ -48,8 +54,10 @@ function Infrastructure() {
           <img className="float-r" src={Sports} alt="Loading..." />
         </div>
         <div>
-          <h2 className="content">Sports and Co-Curricular activities:</h2>
-          <p className="content">
+          <h2 className="content" style={{ textTransform: "uppercase" }}>
+            Sports and Co-Curricular activities:
+          </h2>
+          <p className="content" style={{ fontStyle: "italic" }}>
             {" "}
             All students are strongly encouraged to participate in sports and
             cultural activities. We encourage this participation of students, as
@@ -63,10 +71,12 @@ function Infrastructure() {
             commitment, team spirit and friendship.
           </p>
           <h4>Sports activities offered:</h4>
-          <p>Table tennis, shuttle, carromboard, other outdoor games.</p>
+          <p style={{ fontStyle: "italic" }}>
+            Table tennis, shuttle, carromboard, other outdoor games.
+          </p>
 
           <h4>Co-Curricular activities:</h4>
-          <p>
+          <p style={{ fontStyle: "italic" }}>
             Vocal, dance, karate, skating, traditional games, gymnastics,
             keyboard, art & craft, storytelling etc.,
           </p>
@@ -74,8 +84,10 @@ function Infrastructure() {
       </div>
       <div className="grid-content">
         <div>
-          <h2>SUPW (SOCIALLY USEFUL PRODUCTIVE WORK) I-VII Std:</h2>
-          <p>
+          <h2 style={{ textTransform: "uppercase" }}>
+            SUPW (SOCIALLY USEFUL PRODUCTIVE WORK) I-VII Std:
+          </h2>
+          <p style={{ fontStyle: "italic" }}>
             SUPW is another learning area falling under the domain
             ‘Co-Scholastic’. This curriculum is intended to lend opportunities
             to students to explore and assess their abilities and aptitude on
@@ -107,8 +119,8 @@ function Infrastructure() {
           />
         </div>
         <div>
-          <h2>Library:</h2>
-          <p>
+          <h2 style={{ textTransform: "uppercase" }}>Library:</h2>
+          <p style={{ fontStyle: "italic" }}>
             VISAKAN library stocks fiction, nonfiction, encyclopedias, comics
             covering a wide range of subjects across all ages. Students get to
             take home a book every week in order to foster love for reading in
@@ -120,8 +132,8 @@ function Infrastructure() {
       </div>
       <div className="grid-content">
         <div>
-          <h2>Science Laboratory:</h2>
-          <p>
+          <h2 style={{ textTransform: "uppercase" }}>Science Laboratory:</h2>
+          <p style={{ fontStyle: "italic" }}>
             Is fully equipped as per the guidelines laid by CBSE. These labs
             facilitate firsthand experience of learning different concepts of
             science and in developing scientific reasoning through experiments.
@@ -152,8 +164,8 @@ function Infrastructure() {
           />
         </div>
         <div>
-          <h2>Auditorium:</h2>
-          <p>
+          <h2 style={{ textTransform: "uppercase" }}>Auditorium:</h2>
+          <p style={{ fontStyle: "italic" }}>
             The open air theater is the place where children exhibit their
             oratory skills and talent for acting. This artistically build
             auditorium is a platform for building children to perform in front
@@ -163,8 +175,8 @@ function Infrastructure() {
       </div>
       <div className="grid-content">
         <div>
-          <h2>Audio Visual Room:</h2>
-          <p>
+          <h2 style={{ textTransform: "uppercase" }}>Audio Visual Room:</h2>
+          <p style={{ fontStyle: "italic" }}>
             All students are given compulsory AV period 1 per week where they
             are shown visuals, related to their subjects, non academic issues,
             current affairs and children movies etc., which helps to enhance

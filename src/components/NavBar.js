@@ -51,10 +51,14 @@ function NavBar() {
               Infrastructure
             </NavLink>
             <div className="link dropdown">
-              
-                Education
-                <KeyboardArrowDown style={{display:'inline-flex',verticalAlign:'middle',height:'20px'}} />
-
+              Education
+              <KeyboardArrowDown
+                style={{
+                  display: "inline-flex",
+                  verticalAlign: "middle",
+                  height: "20px",
+                }}
+              />
               <div className="dropdown-box drop-open">
                 <NavLink
                   className="dropdown-item link"

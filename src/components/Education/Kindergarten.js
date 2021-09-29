@@ -58,7 +58,7 @@ function Kindergarten() {
       </div>
       <div>
         {contents.map((content, i) => {
-          return <AlternateGrid direction={i % 2 === 0} content={content} />;
+          return <AlternateGrid key={i} direction={i % 2 === 0} content={content} />;
         })}
       </div>
     </div>

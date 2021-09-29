@@ -4,7 +4,7 @@
     text-align: center;
     color: white;
     padding: 1%;
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid rgb(3, 170, 3);
     border-radius: 10px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgb(23, 61, 28);
 }
