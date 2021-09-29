@@ -17,7 +17,13 @@ function About() {
       </div>
       <div className="grid-content">
         <div style={{ textAlign: "center" }}>
-          <img style={{ margin: "auto" }} src={School} alt="school" />
+          <img
+            style={{ margin: "auto" }}
+            height="250"
+            width="400"
+            src={School}
+            alt="school"
+          />
         </div>
         <div>
           <p>

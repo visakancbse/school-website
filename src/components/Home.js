@@ -88,7 +88,7 @@ function Home() {
       <Standards />
       <div className="grid-2">
         <div className="img">
-          <img src={About} alt="school" />
+          <img width="90%" height="90%" src={About} alt="school" />
         </div>
         <div>
           <h1 style={{ opacity: "0.8", textTransform: "uppercase" }}>
@@ -128,7 +128,7 @@ function Home() {
       <UpcomingEvents />
       <div className="grid-2 red-grad">
         <div className="img">
-          <img src={School} alt="school" />
+          <img height="250" width="400" src={School} alt="school" />
         </div>
         <div>
           <h1

@@ -20,6 +20,7 @@ import Kindergarten from './components/Education/Kindergarten'
 import Primary from './components/Education/Primary'
 import Secondary from './components/Education/Secondary'
 import SeniorSecondary from './components/Education/SeniorSecondary'
+import ShowImages from "./components/Gallery/ShowImages";
 
 function App() {
   const mybutton = useRef(null);
@@ -59,6 +60,7 @@ function App() {
           <Route exact path="/secondary" component={Secondary}></Route>
           <Route exact path="/seniorsecondary" component={SeniorSecondary}></Route>
           <Route exact path="/gallery" component={Gallery}></Route>
+          <Route exact path="/gallery/*" component={ShowImages}></Route>
           <Route exact path="/admission" component={Admission}></Route>
           <Route exact path="/careers" component={Careers}></Route>
           <Route exact path="/contact" component={Contact}></Route>

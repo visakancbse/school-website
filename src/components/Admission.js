@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Button, Typography } from "@mui/material";
-import AdmissionImg from "../images/Visakan-admission.jpg";
+// import AdmissionImg from "../images/Visakan-admission.jpg";
+import AdmissionImg from "../images/about.jpg";
 import "../css/style.css";
 import { useHistory } from "react-router";
 function Admission() {
@@ -16,8 +17,8 @@ function Admission() {
         </Typography>
       </div>
       <div className="grid-content">
-        <div>
-          <img width="500" height="500" src={AdmissionImg} alt="admission" />
+        <div style={{display:'flex',justifyContent:'space-around'}}>
+          <img width="400" height="250" src={AdmissionImg} alt="admission" />
         </div>
         <div>
           <h4>Admission Procedure</h4>

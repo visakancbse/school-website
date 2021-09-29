@@ -1,11 +1,13 @@
 // import { FolderOpen } from '@mui/icons-material'
 import React from "react";
+import { useHistory } from "react-router";
 import "./gallery.css";
 
 function ImageCard({ content }) {
-  const { image, count, name } = content;
+  const { image, count, name ,link} = content;
+  const history=useHistory()
   return (
-    <div style={{padding:'2%'}}>
+    <div onClick={()=>history.push(`/gallery${link}`)} style={{padding:'2%'}}>
       {/* <div className="folder">
                 <FolderOpen className="icon"/>
             </div> */}

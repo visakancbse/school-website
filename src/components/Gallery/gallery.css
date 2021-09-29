@@ -18,14 +18,24 @@
   display: block;
   background-color: white;
   width: 90%;
+  max-width: 400px;
   border-bottom: 5px solid violet;
   border-radius: 5px;
   padding-bottom: 3%;
   cursor: pointer;
   overflow: hidden;
+  animation: zoom 1s ease-in-out;
 }
 .gallery {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 1%;
+}
+@keyframes zoom {
+  0%{
+      transform: scale(0);
+  }
+  100%{
+      transform: scale(1);
+  }
 }

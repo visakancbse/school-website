@@ -3,9 +3,8 @@ import React, { useEffect } from "react";
 import "../css/style.css";
 import Sports from "../images/sports.jpg";
 import Candle from "../images/candle.jpg";
-// import Extra from "../images/extra.jpg";
 import Lab from "../images/lab.JPG";
-import AudioVisual from "../images/auditorium.JPG";
+import AudioVisual from "../images/audiovisual.JPG";
 import Auditorium from "../images/auditorium.JPG";
 import Library from "../images/library.JPG";
 import Social from "../images/social.jpg";
@@ -46,12 +45,24 @@ function Infrastructure() {
           </p>
         </div>
         <div>
-          <img className="float-r" src={Candle} alt="Loading..." />
+          <img
+            className="float-r"
+            height="250"
+            width="400"
+            src={Candle}
+            alt="Loading..."
+          />
         </div>
       </div>
       <div className="grid-content">
         <div>
-          <img className="float-r" src={Sports} alt="Loading..." />
+          <img
+            className="float-r"
+            height="250"
+            width="400"
+            src={Sports}
+            alt="Loading..."
+          />
         </div>
         <div>
           <h2 className="content" style={{ textTransform: "uppercase" }}>
@@ -105,7 +116,13 @@ function Infrastructure() {
           </p>
         </div>
         <div>
-          <img className="float-r" src={Social} alt="Loading..." />
+          <img
+            className="float-r"
+            height="250"
+            width="400"
+            src={Social}
+            alt="Loading..."
+          />
         </div>
       </div>
       <div className="grid-content">
