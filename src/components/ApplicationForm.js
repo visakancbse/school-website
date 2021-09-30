@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
+import "../css/style.css";
 
 function ApplicationForm() {
   useEffect(() => {
     window.document.documentElement.scrollTop = "0";
   }, []);
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="float-r">
       <iframe
         title="application form"
         src="https://docs.google.com/forms/d/e/1FAIpQLSddRNJ7fIuGH1tQ8lWQ5NUMwwRhdq3O3yS-NQaRYq2SYby2nQ/viewform?embedded=true"
