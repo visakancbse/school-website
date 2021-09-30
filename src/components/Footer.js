@@ -16,7 +16,7 @@ function Footer() {
     <div>
       <div className="footer grid-2">
         <div style={{ textAlign: "center", padding: "1%" }}>
-          <img src={Logo} alt="Logo" />
+          <img className="logo-image" src={Logo} alt="Logo" />
           <p>
             At Visakan, we believe that each kid has their own and unique bunch
             of talents and we strive to make them better at it.

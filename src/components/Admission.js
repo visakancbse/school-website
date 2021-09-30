@@ -17,8 +17,13 @@ function Admission() {
         </Typography>
       </div>
       <div className="grid-content">
-        <div style={{display:'flex',justifyContent:'space-around'}}>
-          <img width="400" height="250" src={AdmissionImg} alt="admission" />
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          <img
+            height="250"
+            className="float-r"
+            src={AdmissionImg}
+            alt="admission"
+          />
         </div>
         <div>
           <h4>Admission Procedure</h4>

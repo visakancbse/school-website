@@ -43,7 +43,7 @@ function App() {
       <div className="App">
         <NavBar />
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <img className="logo-image" src={logo} alt="Logo" />
         </div>
 
         {/* <DropBar/> */}

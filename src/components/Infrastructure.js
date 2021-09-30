@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+// import { Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import "../css/style.css";
 import Sports from "../images/sports.jpg";
@@ -16,13 +16,11 @@ function Infrastructure() {
   return (
     <div>
       <div style={{ overflow: "hidden" }}>
-        <Typography
-          style={{ fontFamily: "Times new roman" }}
-          variant="h2"
+        <div
           className="header"
         >
           Infrastructure
-        </Typography>
+        </div>
       </div>
       <div className="grid-content">
         <div>
@@ -47,8 +45,6 @@ function Infrastructure() {
         <div>
           <img
             className="float-r"
-            height="250"
-            width="400"
             src={Candle}
             alt="Loading..."
           />
@@ -58,8 +54,6 @@ function Infrastructure() {
         <div>
           <img
             className="float-r"
-            height="250"
-            width="400"
             src={Sports}
             alt="Loading..."
           />
@@ -212,7 +206,8 @@ function Infrastructure() {
       </div>
       <div style={{ textAlign: "center", padding: "1%" }}>
         <iframe
-          width="560"
+        className="iframe"
+          
           height="315"
           src="https://www.youtube.com/embed/ACHYjrA3wio"
           title="YouTube video player"

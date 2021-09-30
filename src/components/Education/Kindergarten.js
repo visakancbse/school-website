@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Typography } from "@mui/material";
+// import { Typography } from "@mui/material";
 import "../../css/style.css";
 import KG1 from "./KGimages/kindergarten1.JPG";
 import KG2 from "./KGimages/kindergarten2.JPG";
@@ -48,13 +48,11 @@ function Kindergarten() {
   return (
     <div>
       <div style={{ overflow: "hidden" }}>
-        <Typography
-          style={{ fontFamily: "Times New Roman" }}
-          variant="h2"
+        <div
           className="header"
         >
           Kindergarten
-        </Typography>
+        </div>
       </div>
       <div>
         {contents.map((content, i) => {

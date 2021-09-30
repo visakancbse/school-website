@@ -1,16 +1,30 @@
-*{
+* {
   /* font-family: 'Times New Roman', Times, serif; */
 }
 .App {
   background-color: rgb(229, 234, 238);
 }
-::selection{
+::selection {
   color: white;
   /* background-color: rgb(57, 37, 240); */
   background-color: black;
 }
-.logo{
-  padding: 1%;
+
+@media screen and (min-width: 100px) {
+  .logo{
+    /* text-align: right; */
+  }
+  .logo-image {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .logo {
+    padding: 1%;
+  }
+  .logo-image {
+    width: auto;
+  }
 }
 
 .App-logo {
@@ -47,17 +61,16 @@
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width:1000px) {
-  .grid-2{
+@media screen and (min-width: 1000px) {
+  .grid-2 {
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: left;
   }
 }
-@media screen and (min-width:100px) {
-  .grid-2{
+@media screen and (min-width: 100px) {
+  .grid-2 {
     display: block;
     text-align: center;
   }
- 
 }

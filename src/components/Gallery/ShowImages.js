@@ -10,12 +10,11 @@ function ShowImages() {
   const [folder, setFolder] = useState(null);
   const [images, setImages] = useState(null);
   useEffect(() => {
+    window.document.documentElement.scrollTop = "0";
     let location = window.location.toString();
-    try{
-
+    try {
       setFolder(location.split("gallery/")[1]);
-    }
-    catch(e){
+    } catch (e) {
       history.push("/error");
     }
   }, [history]);
@@ -38,7 +37,12 @@ function ShowImages() {
           variant="h2"
           className="header"
         >
-          {folder}
+          {folder?.split("").map((f, i) => {
+            if (i !== 0 && f?.charAt(0) >= "A" && f?.charAt(0) <= "Z") {
+              return " " + f.charAt(0);
+            }
+            return f;
+          })}
         </Typography>
       </div>
       <div className="gallery">

@@ -1,42 +1,74 @@
-
-.event-box{
-    padding: 1%;
+@media screen and (min-width: 100px) {
+  .event-box {
+    /* padding: 1%; */
+  }
+  .event-list {
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .event-date {
+    text-align: center;
+    /* padding: 1%; */
+  }
+  .event-name {
+    width: 100%;
+    margin: auto;
+    /* padding: 0% 5%; */
+  }
+  .grid-2s {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: left;
+    /* padding: 1% 0%; */
+    border-bottom: 1px solid black;
+  }
 }
-.event-list{
+@media screen and (min-width: 500px) {
+  .event-box {
+    padding: 1%;
+  }
+  .event-list {
     margin: auto;
     width: 400px;
     background-color: white;
     text-align: center;
     border-radius: 5px;
-    padding:1%;
-}
-.event-date{
+    padding: 1%;
+  }
+
+  .event-date {
     text-align: center;
     padding: 1%;
-}
-.event-date .h1{
-    font-weight: bolder;
-    font-size: xx-large;
-    display: block;
-    font-style: italic;
-}
-.event-date .h2{
-    display: block;
-    font-weight: bolder;
-    font-size: x-large;
-    border-bottom: 5px solid yellowgreen;
-    border-radius: 10px;
-    font-style: italic;
-}
-.event-name{
+  }
+  .event-name {
     width: 100%;
     margin: auto;
-    padding:0% 5%;
-}
-.grid-2s{
+    padding: 0% 5%;
+  }
+  .grid-2s {
     display: grid;
     grid-template-columns: 30% 70%;
     text-align: left;
     padding: 1% 0%;
     border-bottom: 1px solid black;
+  }
+}
+
+.event-date .h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+  display: block;
+  font-style: italic;
+}
+
+.event-date .h2 {
+  display: block;
+  font-weight: bolder;
+  font-size: x-large;
+  border-bottom: 5px solid yellowgreen;
+  border-radius: 10px;
+  font-style: italic;
 }

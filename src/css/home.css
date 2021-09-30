@@ -8,13 +8,7 @@
   transform: scaleY(1);
   animation: fade 0.3s ease-in-out;
 }
-.image{
-  
-  animation:zoomin 10s ease-in infinite;
-  width: 80%;
-  float: right;
-  height: 400px;
-}
+
 @keyframes fade {
   0%{
     opacity:0.5;
@@ -49,19 +43,8 @@
     100% {transform: scale(1);}
   }/*End of Zoom out Keyframes */
   
-  .overlay{
-    top:0;
-    left:0;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background: linear-gradient(to right,rgb(41, 40, 40) 50%,rgba(0,0,0,0.2),transparent);
-  }
-  .overlay-content{
-    transform: translate(10%,30%);
-  }
+  
+  
   /* .grid-2{
     display: flex;
     grid-template-columns: 50% 50%;
@@ -82,6 +65,26 @@
       background: linear-gradient(to top,rgb(89, 89, 253) 50%,rgba(38, 0, 255, 0.2),transparent);
       color:white;
     }
+    .overlay-content{
+      transform: translate(1%,10%);
+    }
+    .image{
+  
+      animation:zoomin 10s ease-in infinite;
+      width: 100%;
+      float: right;
+      height: 400px;
+    }
+    .overlay{
+      top:0;
+      left:0;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      color: white;
+      background: linear-gradient(to right,rgb(41, 40, 40) 30%,rgba(0,0,0,0.2),transparent);
+    }
   }
   @media screen and (min-width:1000px) {
     .grid-2{
@@ -96,6 +99,26 @@
     .red-grad{
       background: linear-gradient(to left,rgb(89, 89, 253) 50%,rgba(17, 0, 255, 0.2),transparent);
       
+    }
+    .overlay-content{
+      transform: translate(10%,30%);
+    }
+    .image{
+  
+      animation:zoomin 10s ease-in infinite;
+      width: 80%;
+      float: right;
+      height: 400px;
+    }
+    .overlay{
+      top:0;
+      left:0;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      color: white;
+      background: linear-gradient(to right,rgb(41, 40, 40) 50%,rgba(0,0,0,0.2),transparent);
     }
 
   }
