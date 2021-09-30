@@ -11,8 +11,14 @@ function ShowImages() {
   const [images, setImages] = useState(null);
   useEffect(() => {
     let location = window.location.toString();
-    setFolder(location.replace("http://localhost:3000/gallery/", ""));
-  }, []);
+    try{
+
+      setFolder(location.split("gallery/")[1]);
+    }
+    catch(e){
+      history.push("/error");
+    }
+  }, [history]);
   useEffect(() => {
     if (folder !== null) {
       let imgs = AllImages[`${folder}`];
