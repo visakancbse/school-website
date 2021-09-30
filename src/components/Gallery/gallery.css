@@ -7,11 +7,12 @@
   margin: auto;
   width: 100%;
 }
-.image-card h2,.image-card p{
-    opacity: 0.8;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
-    padding-left: 5%;
+.image-card h2,
+.image-card p {
+  opacity: 0.8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  padding-left: 5%;
 }
 
 .image-card {
@@ -31,11 +32,15 @@
   grid-template-columns: auto auto auto;
   padding: 1%;
 }
+.image-display {
+  padding: 5%;
+  animation: zoom 1s ease-in-out;
+}
 @keyframes zoom {
-  0%{
-      transform: scale(0);
+  0% {
+    transform: scale(0);
   }
-  100%{
-      transform: scale(1);
+  100% {
+    transform: scale(1);
   }
 }

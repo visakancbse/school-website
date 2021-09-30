@@ -30,17 +30,34 @@ function Footer() {
               margin: "auto",
             }}
           >
-            <a style={{ color: "white" }} href="https://www.facebook.com">
+            <a
+              style={{ color: "white" }}
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/Visakan-School-CBSE-566566400154128"
+            >
               <FacebookRounded />
-            </a>
-            <a style={{ color: "white" }} href="https://www.twitter.com">
-              <Twitter />
-            </a>
-            <a style={{ color: "white" }} href="https://www.instagram.com">
-              <Instagram />
             </a>
             <a
               style={{ color: "white" }}
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.twitter.com"
+            >
+              <Twitter />
+            </a>
+            <a
+              style={{ color: "white" }}
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com"
+            >
+              <Instagram />
+            </a>
+            <a
+              target="_blank"
+              style={{ color: "white" }}
+              rel="noreferrer"
               href="https://www.youtube.com/channel/UC_G0EaQvIVoNcGc8YhO2UEA"
             >
               <YouTube />
@@ -56,9 +73,6 @@ function Footer() {
               </NavLink>
               <NavLink className="link-down" to="/infrastructure">
                 Infrastructure
-              </NavLink>
-              <NavLink className="link-down" to="/education">
-                Education
               </NavLink>
               <NavLink className="link-down" to="/gallery">
                 Gallery
@@ -79,10 +93,8 @@ function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <CopyrightRounded
-          style={{ fontSize:'20px' }}
-        />
-        {" "}Copyright 2021 Visakan school - madurai. Made with{" "}
+        <CopyrightRounded style={{ fontSize: "20px" }} /> Copyright 2021 Visakan
+        school - madurai. Made with{" "}
         <Favorite
           style={{
             display: "inline-flex",
@@ -92,6 +104,7 @@ function Footer() {
         />{" "}
         by{" "}
         <a
+          rel="noreferrer"
           className="a-down"
           href="https://www.linkedin.com/in/prakash-devendran"
           target="blank"
