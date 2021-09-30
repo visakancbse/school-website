@@ -55,7 +55,7 @@ function Careers() {
         <div style={{ textAlign: "center", padding: "1%" }}>
           <a
             style={{ textDecoration: "none" }}
-            href="https://forms.gle/42bAEQcBW1aUwdXx6"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdRo6mAzXDF-ZNtSRcdzLaUvrozH8BFT0408IeanSp-9PDi1A/viewform?usp=sf_link"
             target="blank"
           >
             <Button style={{ backgroundColor: "#f44336", color: "aliceblue" }}>

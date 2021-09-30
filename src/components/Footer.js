@@ -6,7 +6,6 @@ import {
   FacebookRounded,
   Favorite,
   Instagram,
-  Twitter,
   YouTube,
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
@@ -38,14 +37,7 @@ function Footer() {
             >
               <FacebookRounded />
             </a>
-            <a
-              style={{ color: "white" }}
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.twitter.com"
-            >
-              <Twitter />
-            </a>
+
             <a
               style={{ color: "white" }}
               target="_blank"
