@@ -42,7 +42,7 @@ function Footer() {
               style={{ color: "white" }}
               target="_blank"
               rel="noreferrer"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/visakan_school_cbse/"
             >
               <Instagram />
             </a>
