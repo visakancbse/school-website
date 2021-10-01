@@ -1,28 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "../css/navbar.css";
 import { NavLink } from "react-router-dom";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { ChevronLeftRounded, KeyboardArrowDown } from "@mui/icons-material";
 
 import logo from "../images/logo.png";
 
-function NavBar() {
-  const navRef = useRef(null);
+function NavBar({ navRef }) {
   const closeNavBar = () => {
     navRef.current.className = "navbox";
   };
   useEffect(() => {}, []);
   return (
     <>
-      <div
-        className="menu"
-        onClick={() => {
-          navRef.current.className = "navopen";
-        }}
-      >
-        <MenuRoundedIcon />
-      </div>
-
       <div className="navbox" ref={navRef}>
         <div className="close" onClick={closeNavBar}>
           <ChevronLeftRounded style={{ fontSize: "xx-large" }} />

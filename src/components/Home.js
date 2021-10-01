@@ -128,7 +128,7 @@ function Home() {
       <UpcomingEvents />
       <div className="grid-2 red-grad">
         <div className="img">
-          <img height="250" width="100%" src={School} alt="school" />
+          <img height="100%" width="100%" src={School} alt="school" />
         </div>
         <div>
           <h1

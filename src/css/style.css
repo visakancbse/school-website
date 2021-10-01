@@ -79,14 +79,13 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
   .float-r {
-    display: flex;
-    justify-content: space-around;
+    margin: auto;
     width: 400px;
   }
   .iframe {
-    width: 500px;
+    width: 400px;
   }
 }
 @media screen and (min-width: 1000px) {

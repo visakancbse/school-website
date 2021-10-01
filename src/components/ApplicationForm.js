@@ -6,15 +6,15 @@ function ApplicationForm() {
     window.document.documentElement.scrollTop = "0";
   }, []);
   return (
-    <div className="float-r">
+    <div>
       <iframe
         title="application form"
         src="https://docs.google.com/forms/d/e/1FAIpQLSddRNJ7fIuGH1tQ8lWQ5NUMwwRhdq3O3yS-NQaRYq2SYby2nQ/viewform?embedded=true"
-        width="700"
+        width="100%"
         height="520"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
       >
         Loading…
       </iframe>

@@ -16,13 +16,15 @@ import { Navigation } from "@mui/icons-material";
 import ApplicationForm from "./components/ApplicationForm";
 import NotFoundPage from "./components/NotFoundPage";
 import LiveEvent from "./components/LiveEvent";
-import Kindergarten from './components/Education/Kindergarten'
-import Primary from './components/Education/Primary'
-import Secondary from './components/Education/Secondary'
-import SeniorSecondary from './components/Education/SeniorSecondary'
+import Kindergarten from "./components/Education/Kindergarten";
+import Primary from "./components/Education/Primary";
+import Secondary from "./components/Education/Secondary";
+import SeniorSecondary from "./components/Education/SeniorSecondary";
 import ShowImages from "./components/Gallery/ShowImages";
+import MenuRounded from "@mui/icons-material/MenuRounded";
 
 function App() {
+  const navRef = useRef(null);
   const mybutton = useRef(null);
   useEffect(() => {
     let element = mybutton?.current;
@@ -41,8 +43,23 @@ function App() {
     <Router>
       <LiveEvent />
       <div className="App">
-        <NavBar />
+        <NavBar navRef={navRef} />
         <div className="logo">
+          <span
+            style={{
+              float: "left",
+              display: "table-cell",
+              verticalAlign: "middle",
+            }}
+            className="menu"
+            onClick={() => {
+              navRef.current.className = "navopen";
+            }}
+          >
+            <span>
+              <MenuRounded />
+            </span>
+          </span>
           <img className="logo-image" src={logo} alt="Logo" />
         </div>
 
@@ -58,7 +75,11 @@ function App() {
           <Route exact path="/kindergarten" component={Kindergarten}></Route>
           <Route exact path="/primary" component={Primary}></Route>
           <Route exact path="/secondary" component={Secondary}></Route>
-          <Route exact path="/seniorsecondary" component={SeniorSecondary}></Route>
+          <Route
+            exact
+            path="/seniorsecondary"
+            component={SeniorSecondary}
+          ></Route>
           <Route exact path="/gallery" component={Gallery}></Route>
           <Route exact path="/gallery/*" component={ShowImages}></Route>
           <Route exact path="/admission" component={Admission}></Route>
@@ -82,7 +103,7 @@ function App() {
           position: "fixed",
           zIndex: "100",
           backgroundColor: "#f44336",
-          color:'white',
+          color: "white",
           display:
             window.document.documentElement.scrollTop > 20 ? "block" : "none",
         }}

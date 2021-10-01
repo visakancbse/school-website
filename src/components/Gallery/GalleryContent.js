@@ -43,7 +43,7 @@ export const GalleryContent = [
   },
   {
     image: Art1,
-    count: "5",
+    count: "4",
     name: "Art and Crafts",
     link: "/ArtAndCrafts",
   },
@@ -67,7 +67,7 @@ export const GalleryContent = [
   },
   {
     image: Annual1,
-    count: "7",
+    count: "6",
     name: "Annual Day",
     link: "/AnnualDay",
   },

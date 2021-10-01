@@ -20,9 +20,9 @@
     margin: auto;
   }
   .menu {
-    left: 10px;
+    /* left: 10px;
     top: 10%;
-    position: absolute;
+    position: absolute; */
     display: inline;
     cursor: pointer;
     /* color: white;
