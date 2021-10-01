@@ -4,7 +4,7 @@ import Bg2 from "../images/slider-bg2.JPG";
 import Bg3 from "../images/slider-bg3.JPG";
 import Bg4 from "../images/slider-bg4.JPG";
 import "../css/home.css";
-import { Button, Typography } from "@mui/material";
+import { Button } from "@mui/material";
 import Standards from "./Home/Standards";
 import UpcomingEvents from "./Home/UpcomingEvents";
 import Testimonials from "./Home/Testimonials";
@@ -60,13 +60,10 @@ function Home() {
               <img className="image" src={image} alt="slider" />;
               <div className="overlay">
                 <div className="overlay-content">
-                  <Typography
-                    style={{ fontFamily: "Times new roman" }}
-                    variant="h2"
-                  >
+                  <h1 className="home-head">
                     {" "}
                     Space To Learn ! Space To Grow..!
-                  </Typography>
+                  </h1>
                   <p>Visakan School is </p>
                   <p>
                     "The School with different to give the Overall Development

@@ -27,7 +27,7 @@ function About() {
       image: Principal,
       dimension: {
         x: "250",
-        y: "300",
+        y: "500",
       },
       title: "Principal",
       desc: [
@@ -49,6 +49,7 @@ function About() {
             style={{ margin: "auto" }}
             height="250"
             width="400"
+            className="float-r"
             src={School}
             alt="school"
           />
@@ -99,7 +100,7 @@ function About() {
           </p>
         </div>
         <div style={{ textAlign: "center" }}>
-          <img style={{ margin: "auto" }} src={AboutImg} alt="school" />
+          <img style={{ margin: "auto" }} className="float-r" src={AboutImg} alt="school" />
         </div>
       </div>
     </div>
