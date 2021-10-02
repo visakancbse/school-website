@@ -13,13 +13,11 @@ function ContactInfo() {
         Visakan School, Alagusundaram Nagar, Bykkara, Madurai - 625004
       </a>
       <h3>Phone Number:</h3>
-      <a href="tel:0452-2693886" className="a-down">
-        0452 - 2693886
+      <a href="tel:0452-3552024" className="a-down">
+        0452 - 3552024
       </a>
       ,{" "}
-      <a href="tel:+918870936402" className="a-down">
-        +91 88709 36402
-      </a>
+      
       <h3>Email:</h3>
       <a
         className="a-down"
