@@ -21,7 +21,7 @@ function SeniorSecondary() {
         <p style={{ fontStyle: "italic" }}>
           We offer three major streams after Grade X to pursue in Grade XI and
           XII at our campus. Students can choose between, Science Commerce
-          Humanities/Arts
+
         </p>
         <h1>Science Stream</h1>
         <p style={{ fontStyle: "italic" }}>
@@ -80,16 +80,14 @@ function SeniorSecondary() {
         <ul style={{ fontStyle: "italic" }}>
           <li>Accountancy</li>
           <li>Economics</li>
-          <li>Business</li>
-          <li>Studies</li>
+          <li>Business Studies</li>
           <li>an Elective Subject</li>
         </ul>
         <p style={{ fontStyle: "italic" }}>
           English is compulsory. Elective subjects are
         </p>
         <ul style={{ fontStyle: "italic" }}>
-          <li>Mathematics</li>
-          <li>Informatics</li>
+          <li>Mathematics,Informatics</li>
           <li>Practices</li>
           <li>Business Communication</li>
           <li>Finance</li>
@@ -107,22 +105,7 @@ function SeniorSecondary() {
           inclination towards mathematics and analytics, you should prefer
           taking up commerce field.
         </p>
-        <h1>Humanities - Arts Stream</h1>
-        <p style={{ fontStyle: "italic" }}>This stream offers</p>
-        <ul style={{ fontStyle: "italic" }}>
-          <li>Business Studies</li>
-          <li>Fashion studies</li>
-          <li>Beauty and wellness</li>
-          <li>Textile designing</li>
-        </ul>
-
-        <p style={{ fontStyle: "italic" }}>
-          Textile designing with English opening opportunities for creativity
-          and innovation in this phase of learning. This skill set stream helps
-          in creating clothes and lifestyle accessories, creating designs for
-          knitted, woven, printed fabrics or surface ornamented fabrics and the
-          likes.
-        </p>
+        
       </div>
     </div>
   );
