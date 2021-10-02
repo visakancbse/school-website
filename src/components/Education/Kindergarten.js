@@ -18,9 +18,7 @@ function Kindergarten() {
         y: "250",
       },
       desc: [
-        "Discipline is helping a child solve a problem. Punishment is making a child suffer for having a problem. To raise problem solvers, focus on solutions, not retribution.",
-        "“You can’t teach people everything they need to know. The best you can do is position them where they can find what they need to know when they need to know it.“",
-      ],
+        "Kindergarten is a preschool educational approach based on playing, singing, practical activities such as drawing, and social interaction as part of the transition from home to school."  ],
     },
     {
       image: KG2,
