@@ -30,8 +30,8 @@ function Kindergarten() {
       },
       title: "Art and Crafts",
       desc: [
-        "Art is a great way to allow kids to explore themselves and let them push the boundaries of their imagination. It is important to find them a role model or someone they can look up to, which is why quotes from successful artists are important. They might ignite something in kids that sticks with them for the rest of their lives and they are able to become successful in whatever they do. Read our article to find quotes on children’s art and creativity that might inspire the artist inside them",
-      ],
+        "Art and crafts are a great way to ignite creativity and spark some imagination in young minds. Art and crafts are a great way to ignite creativity and spark some imagination in young minds."   
+],
     },
     {
       image: KG3,
