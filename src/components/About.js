@@ -4,7 +4,7 @@ import "../css/style.css";
 import School from "../images/school.jpg";
 import Principal from "../images/principal.jfif";
 import Correspondent from "../images/correspondent.JPG";
-import AboutImg from "../images/visakan-school-about-image.jpg";
+import AboutImg from "../images/about1.jpg";
 import AlternateGrid from "./AlternateGrid";
 function About() {
   useEffect(() => {
